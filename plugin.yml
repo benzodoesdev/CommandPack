@@ -1,5 +1,5 @@
 name: CommandPack
-main: CommandPack\Coammands
+main: CommandPack\Commands
 api: [3.0.0-ALPHA12]
 version: 1.0.0
 author: benzo
