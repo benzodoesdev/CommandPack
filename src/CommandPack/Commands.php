@@ -1,6 +1,6 @@
 <?php
 
-namespace CoammandPack;
+namespace CommandPack;
 
 use pocketmine\Server;
 use pocketmine\Player;
