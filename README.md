@@ -9,7 +9,7 @@ Basic Package of useful commands (Good for donator ranks on factions servers)
 * /clearinv
 
 # Command permissions
-  * use.fly
+  * use.feed
   * use.heal
   * use.cure
   * use.clearinv
