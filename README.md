@@ -9,8 +9,9 @@ Basic Package of useful commands (Good for donator ranks on factions servers)
 * /clearinv
 
 # Command permissions
-  use.fly
-  use.heal
-  use.cure
-
+  * use.fly
+  * use.heal
+  * use.cure
+  * use.clearinv
+  * use.fly
 # Have suggestions for commands? File an issue and ill see what i can do! ;)
