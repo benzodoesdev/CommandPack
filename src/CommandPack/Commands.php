@@ -38,6 +38,7 @@ class Main extends PluginBase implements Listener{
                         $sender->setHealth(20);
                         $sender->setHunger(20);
                         $sender->sendMessage("You have been cured!");
+                    }
                 case "clearinv":
                     if($sender instanceof Player) {
                         $sender->getInventory()->clearAll();
