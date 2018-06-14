@@ -3,10 +3,10 @@ Basic Package of useful commands (Good for donator ranks on factions servers)
 
 # INCLUDES LISTED COMMANDS
 * /heal
-* /fly
+* /cure
 * /feed
-(working on /fly atm)
-(working on /clearinv)
+* /fly
+* /clearinv
 
 # Command permissions
   use.fly
