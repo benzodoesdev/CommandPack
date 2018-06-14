@@ -24,6 +24,7 @@ class Commands extends PluginBase implements Listener{
                         $sender->setHunger(20);
                         $sender->sendMessage("You are no longer hungry!");
                     }
+                return true;
                 break;
 
                 case "heal":
@@ -31,6 +32,7 @@ class Commands extends PluginBase implements Listener{
                          $sender->setHealth(20);
                          $sender->sendMessage("You have been healed!");
                     }
+                return true;
                 break;
 
                 case "cure":
@@ -39,11 +41,14 @@ class Commands extends PluginBase implements Listener{
                         $sender->setHunger(20);
                         $sender->sendMessage("You have been cured!");
                     }
+                return true;
+                break;
                 case "clearinv":
                     if($sender instanceof Player) {
                         $sender->getInventory()->clearAll();
                         $sender->getArmorInventory()->clearAll();
                     }
+                return true;
                 break;
                 case "fly":
                     if($sender instanceof Player) {
@@ -53,6 +58,7 @@ class Commands extends PluginBase implements Listener{
                             $sender->setAllowFlight(false);
                         }
                     }
+                return true;
                 break;
             }
         }
