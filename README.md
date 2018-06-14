@@ -1,5 +1,5 @@
 # CommandPack
-Basic Package of useful commands1 (Good for donator ranks on factions servers)
+Basic Package of useful commands (Good for donator ranks on factions servers)
 
 # INCLUDES LISTED COMMANDS
 * /heal
