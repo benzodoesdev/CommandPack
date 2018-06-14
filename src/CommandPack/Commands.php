@@ -22,14 +22,14 @@ class Main extends PluginBase implements Listener{
                 case "feed":
                     if($sender instanceof Player){
                         $sender->setHunger(20);
-                        $sender->sendMessage("You are no longer hungry!")
+                        $sender->sendMessage("You are no longer hungry!");
                     }
                 break;
 
                 case "heal":
                     if ($sender instanceof Player) {
                          $sender->setHealth(20);
-                         $sender->sendMessage("You have been healed!")
+                         $sender->sendMessage("You have been healed!");
                     }
                 break;
 
@@ -37,7 +37,7 @@ class Main extends PluginBase implements Listener{
                     if($sender instanceof Player){
                         $sender->setHealth(20);
                         $sender->setHunger(20);
-                        $sender->sendMessage("You have been cured!")
+                        $sender->sendMessage("You have been cured!");
                 case "clearinv":
                     if($sender instanceof Player) {
                         $sender->getInventory()->clearAll();
