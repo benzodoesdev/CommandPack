@@ -16,3 +16,11 @@ heal:
  cure:
  description: "Use cure command"
  permission: use.cure
+ 
+ fly:
+ description: "Use fly command"
+ permission: use.fly
+ 
+ clearinv:
+ description: "Use clearinv command"
+ permission: use.clearinv
