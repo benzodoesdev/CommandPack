@@ -28,7 +28,6 @@ class Commands extends PluginBase implements Listener{
                 
                 case "nick":
                     if($sender instanceof Player){
-                         if(count($args) === 1){
                         $sender->setNameTag($args[0]);
                     }
                 return true;
