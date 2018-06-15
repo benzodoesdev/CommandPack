@@ -7,6 +7,7 @@ Basic Package of useful commands (Good for donator ranks on factions servers)
 * /feed
 * /fly
 * /clearinv
+* /nick
 
 # Command permissions
   * use.feed
@@ -14,4 +15,6 @@ Basic Package of useful commands (Good for donator ranks on factions servers)
   * use.cure
   * use.clearinv
   * use.fly
+  * use.nick
+  
 # Have suggestions for commands? File an issue and ill see what i can do! ;)
