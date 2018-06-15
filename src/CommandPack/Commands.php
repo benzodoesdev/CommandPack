@@ -68,7 +68,7 @@ class Commands extends PluginBase implements Listener{
                 break;
                 case "fly":
                     if($sender instanceof Player){
-                        if($sender->hasPermission(use.fly))
+                        if($sender->hasPermission(use.fly)){
                         if($sender->getAllowFlight()){
                             $sender->setAllowFlight(true);
                         } else {
