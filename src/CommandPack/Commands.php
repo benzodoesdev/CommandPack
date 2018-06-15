@@ -2,8 +2,7 @@
 
 namespace CommandPack;
 
-use pocketmine\Server;
-use pocketmine\Player;
+use pocketmine\Server;use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 
@@ -30,7 +29,7 @@ class Commands extends PluginBase implements Listener{
                 case "nick":
                     if($sender instanceof Player){
                          if(count($args) === 1){
-                             $sender->setNameTag($args[0]);
+                        $sender->setNameTag($args[0]);
                     }
                 return true;
                 break;
