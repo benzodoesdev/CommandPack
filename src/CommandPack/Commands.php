@@ -33,6 +33,7 @@ class Commands extends PluginBase implements Listener{
                     if($sender instanceof Player){
                         if($sender->hasPermssion("use.nick")){
                         $sender->setNameTag($args[0]);
+                        $sender->sendMessage("Nick has been set succesfully");
                         }
                     }
                 return true;
