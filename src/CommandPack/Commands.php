@@ -20,44 +20,55 @@ class Commands extends PluginBase implements Listener{
             switch($cmd->getName()) {
                 case "feed":
                     if($sender instanceof Player){
+                        if($sender->hasPermission)(use.feed)){    
                         $sender->setFood(20);
                         $sender->sendMessage("You are no longer hungry!");
+                        }    
                     }
                 return true;
                 break;
                 
                 case "nick":
                     if($sender instanceof Player){
+                        if($sender->hasPermssion(use.nick)){
                         $sender->setNameTag($args[0]);
+                        }
                     }
                 return true;
                 break;
                             
                 case "heal":
                     if($sender instanceof Player){
+                        if($sender-hasPermission(use.heal)){
                         $sender->setHealth(20);
                         $sender->sendMessage("You have been healed!");
+                        }
                     }
                 return true;
                 break;
 
                 case "cure":
                     if($sender instanceof Player){
+                        if($sender->hasPermission(use.cure)){
                         $sender->setHealth(20);
                         $sender->setFood(20);
                         $sender->sendMessage("You have been cured!");
-                    }
+                        }
+                    }        
                 return true;
                 break;
                 case "clearinv":
-                    if($sender instanceof Player) {
+                    if($sender instanceof Player){
+                        if(sender->hasPermission(use.clearinv)){
                         $sender->getInventory()->clearAll();
                         $sender->getArmorInventory()->clearAll();
+                        }    
                     }
                 return true;
                 break;
                 case "fly":
-                    if($sender instanceof Player) {
+                    if($sender instanceof Player){
+                        if($sender->hasPermission(use.fly))
                         if($sender->getAllowFlight()){
                             $sender->setAllowFlight(true);
                         } else {
