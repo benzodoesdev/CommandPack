@@ -19,3 +19,6 @@ commands:
  fly:
   description: "Use fly command"
   permission: use.fly
+  nick:
+  description: "Use nick command"
+  permission: use.nick
