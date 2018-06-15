@@ -20,7 +20,7 @@ class Commands extends PluginBase implements Listener{
             switch($cmd->getName()) {
                 case "feed":
                     if($sender instanceof Player){
-                        if($sender->hasPermission)(use.feed)){    
+                        if($sender->hasPermission)("use.feed")){    
                         $sender->setFood(20);
                         $sender->sendMessage("You are no longer hungry!");
                         }    
@@ -30,7 +30,7 @@ class Commands extends PluginBase implements Listener{
                 
                 case "nick":
                     if($sender instanceof Player){
-                        if($sender->hasPermssion(use.nick)){
+                        if($sender->hasPermssion("use.nick")){
                         $sender->setNameTag($args[0]);
                         }
                     }
@@ -39,7 +39,7 @@ class Commands extends PluginBase implements Listener{
                             
                 case "heal":
                     if($sender instanceof Player){
-                        if($sender-hasPermission(use.heal)){
+                        if($sender-hasPermission("use.heal")){
                         $sender->setHealth(20);
                         $sender->sendMessage("You have been healed!");
                         }
@@ -49,7 +49,7 @@ class Commands extends PluginBase implements Listener{
 
                 case "cure":
                     if($sender instanceof Player){
-                        if($sender->hasPermission(use.cure)){
+                        if($sender->hasPermission("use.cure")){
                         $sender->setHealth(20);
                         $sender->setFood(20);
                         $sender->sendMessage("You have been cured!");
@@ -59,7 +59,7 @@ class Commands extends PluginBase implements Listener{
                 break;
                 case "clearinv":
                     if($sender instanceof Player){
-                        if(sender->hasPermission(use.clearinv)){
+                        if(sender->hasPermission("use.clearinv")){
                         $sender->getInventory()->clearAll();
                         $sender->getArmorInventory()->clearAll();
                         }    
@@ -68,7 +68,7 @@ class Commands extends PluginBase implements Listener{
                 break;
                 case "fly":
                     if($sender instanceof Player){
-                        if($sender->hasPermission(use.fly)){
+                        if($sender->hasPermission("use.fly")){
                         if($sender->getAllowFlight()){
                             $sender->setAllowFlight(true);
                         } else {
