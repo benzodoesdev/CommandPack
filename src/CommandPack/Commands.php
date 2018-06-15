@@ -7,34 +7,34 @@ use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\Player;
+
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
 class Commands extends PluginBase implements Listener{
-
         public function onEnable(): void {
                 $this->getServer()->getPluginManager()->registerEvents($this, $this);
         }
 
         public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool {
 
-            switch($cmd->getName()) {
+
+                switch($cmd->getName()) {
                 case "feed":
                     if($sender instanceof Player){
                         if($sender->hasPermission)("use.feed")){    
                         $sender->setFood(20);
-                        $sender->sendMessage("You are no longer hungry!");
-                        }    
+                        $sender->sendMessage("You are no longer hungry!");                        }    
                     }
                 return true;
                 break;
                 
                 case "nick":
                     if($sender instanceof Player){
-                        if($sender->hasPermssion("use.nick")){
+                        if($sender->hasPermission("use.nick")){
                         $sender->setNameTag($args[0]);
                         $sender->sendMessage("Nick has been set succesfully");
-                        }
+                        }"
                     }
                 return true;
                 break;
@@ -59,15 +59,18 @@ class Commands extends PluginBase implements Listener{
                     }        
                 return true;
                 break;
+                
                 case "clearinv":
                     if($sender instanceof Player){
                         if($sender->hasPermission("use.clearinv")){
                         $sender->getInventory()->clearAll();
                         $sender->getArmorInventory()->clearAll();
+                        $sender->sendMessage("Inventory Has been cleared Succesfully");
                         }    
                     }
                 return true;
                 break;
+                
                 case "fly":
                     if($sender instanceof Player){
                         if($sender->hasPermission("use.fly")){
