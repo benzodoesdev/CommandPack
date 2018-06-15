@@ -61,7 +61,7 @@ class Commands extends PluginBase implements Listener{
                 break;
                 case "clearinv":
                     if($sender instanceof Player){
-                        if(sender->hasPermission("use.clearinv")){
+                        if($sender->hasPermission("use.clearinv")){
                         $sender->getInventory()->clearAll();
                         $sender->getArmorInventory()->clearAll();
                         }    
