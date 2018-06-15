@@ -1,0 +1,30 @@
+name: CommandPack
+main: CommandPack\CommandPack
+api: [3.0.0-ALPHA12]
+version: 1.0.0
+author: benzo
+
+commands:
+ feed:
+  description: "Use feed command"
+  permission: use.feed
+
+heal:
+ description: "Use heal command"
+ permission: use.heal
+
+ cure:
+ description: "Use cure command"
+ permission: use.cure
+
+ clearinv:
+ description: "Use clearinv command"
+ permission: use.clearinv
+
+ fly:
+ description: "Use fly command"
+ permission: use.fly
+
+ nick:
+ description: "Use nick command"
+ permission: use.nick
