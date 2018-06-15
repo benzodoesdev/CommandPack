@@ -21,7 +21,7 @@ class Commands extends PluginBase implements Listener{
             switch($cmd->getName()) {
                 case "feed":
                     if($sender instanceof Player){
-                        $sender->setHunger(20);
+                        $sender->setFood(20);
                         $sender->sendMessage("You are no longer hungry!");
                     }
                 return true;
@@ -38,7 +38,7 @@ class Commands extends PluginBase implements Listener{
                 case "cure":
                     if($sender instanceof Player){
                         $sender->setHealth(20);
-                        $sender->setHunger(20);
+                        $sender->setFood(20);
                         $sender->sendMessage("You have been cured!");
                     }
                 return true;
