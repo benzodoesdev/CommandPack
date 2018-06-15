@@ -27,10 +27,6 @@ class Commands extends PluginBase implements Listener{
                 return true;
                 break;
                 
-
-                return true;
-                break;
-                
                 case "nick":
                     if ($sender instanceof Player) {
                          if(count($args) === 1){
