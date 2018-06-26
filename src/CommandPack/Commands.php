@@ -23,7 +23,8 @@ class Commands extends PluginBase implements Listener{
                         if($sender->hasPermission)("use.feed"){                            
                            $sender->setFood(20);
                         $sender->sendMessage("&eYou are no longer hungry!");                        
-                        }                        }
+                        }                        
+                    }
                 return true;
                 break;
                 
