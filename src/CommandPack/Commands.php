@@ -4,7 +4,8 @@ namespace CommandPack;
 
 use pocketmine\Server;
 use pocketmine\Player;
-use pocketmine\plugin\PluginBase;use pocketmine\event\Listener;
+use pocketmine\plugin\PluginBase;
+use pocketmine\event\Listener;
 use pocketmine\Player;
 
 use pocketmine\command\Command;
