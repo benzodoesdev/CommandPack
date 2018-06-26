@@ -6,7 +6,6 @@ use pocketmine\Server;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
-use pocketmine\Player;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -21,17 +20,16 @@ class Commands extends PluginBase implements Listener{
                 switch($cmd->getName()) {
                 case "feed":
                     if($sender instanceof Player){
-                        if($sender->hasPermission)("use.feed")){                            
+                        if($sender->hasPermission)("use.feed"){                            
                            $sender->setFood(20);
                         $sender->sendMessage("&eYou are no longer hungry!");                        
-                        }    
-                    }
+                        }                        }
                 return true;
                 break;
                 
                 case "nick":
                     if($sender instanceof Player){
-                        if($sender->hasPermission("use.nick")){
+                        if($sender->hasPermission("use.nick"){
                         $sender->setNameTag($args[0]);
                         $sender->sendMessage("&eNick has been set succesfully");
                         }
@@ -41,7 +39,7 @@ class Commands extends PluginBase implements Listener{
                             
                 case "heal":
                     if($sender instanceof Player){
-                        if($sender->hasPermission("use.heal")){
+                        if($sender->hasPermission("use.heal"){
                         $sender->setHealth(20);
                         $sender->sendMessage("&You have been healed!");
                         }
@@ -51,7 +49,7 @@ class Commands extends PluginBase implements Listener{
 
                 case "cure":
                     if($sender instanceof Player){
-                        if($sender->hasPermission("use.cure")){
+                        if($sender->hasPermission("use.cure"){
                         $sender->setHealth(20);
                         $sender->setFood(20);
                         $sender->sendMessage("&eYou have been cured!");
@@ -62,7 +60,7 @@ class Commands extends PluginBase implements Listener{
                 
                 case "clearinv":
                     if($sender instanceof Player){
-                        if($sender->hasPermission("use.clearinv")){
+                        if($sender->hasPermission("use.clearinv"){
                         $sender->getInventory()->clearAll();
                         $sender->getArmorInventory()->clearAll();
                         $sender->sendMessage("&eInventory Has been cleared Succesfully");
@@ -73,7 +71,7 @@ class Commands extends PluginBase implements Listener{
                 
                 case "fly":
                     if($sender instanceof Player){
-                        if($sender->hasPermission("use.fly")){
+                        if($sender->hasPermission("use.fly"){
                         if($sender->getAllowFlight()){
                             $sender->setAllowFlight(true);
                             $sender->sendMessage("&eFlight has been enabled!")
